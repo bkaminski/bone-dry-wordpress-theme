@@ -10,3 +10,11 @@ License URI: https://github.com/bkaminski/bone-dry-wordpress-theme/blob/master/L
 Tags: mobile first, secure, user friendly, Bootstrap, structured data, service based website, custom build, custom functions
 Text Domain: bone-dry
 */
+
+.subMenu {
+min-height: 77px;
+width: auto;
+background: #0099ff;
+margin-top: 53px;
+padding-bottom: 15px;
+}
