@@ -17,4 +17,30 @@ width: auto;
 background: #0099ff;
 margin-top: 53px;
 padding-bottom: 15px;
+border-bottom: 4px solid #ffcc00;
+}
+/* =============== FontAwesome styling =============== */
+.fa-facebook {
+transition: 0.4s ease-in-out;
+}
+.fa-facebook:hover {
+color: #ffcc00;
+transition: 0.4s ease-in-out;
+}
+.fa-twitter-square {
+transition: 0.4s ease-in-out;
+}
+.fa-twitter-square:hover {
+color: #ffcc00;
+transition: 0.4s ease-in-out;
+}
+/* =============== /FontAwesome styling =============== */
+a[href^="tel:"] {
+color: #ffffff;
+text-decoration: none;
+transition: 0.4s ease-in-out;
+}
+a[href^="tel:"]:hover {
+color: #ffcc00;
+transition: 0.4s ease-in-out;
 }
