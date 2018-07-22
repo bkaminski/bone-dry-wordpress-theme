@@ -6,13 +6,13 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<nav class="navbar navbar-expand-md fixed-top" style="background:#2f4858;">
 			<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-				<img alt="Aqua Pro Incorporated" src="<?php echo get_template_directory_uri(); ?>/lib/img/aqua-pro-logo-header.png" class="mr-3" />
-				<span class=""><?php echo get_bloginfo('name'); ?></span>
+				<img alt="Aqua Pro Incorporated" src="<?php echo get_template_directory_uri(); ?>/lib/img/api-nav-logo.png" class="mr-3" />
+				<span class="apiName text-uppercase"><?php echo get_bloginfo('name'); ?></span>
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-			</button>
+			<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+			</button> -->
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<?php
 				wp_nav_menu( array(
