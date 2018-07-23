@@ -11,8 +11,13 @@
 				<img alt="Aqua Pro Incorporated" src="<?php echo get_template_directory_uri(); ?>/lib/img/api-nav-logo.png" class="mr-3" />
 				<span class="apiName text-uppercase"><?php echo get_bloginfo('name'); ?></span>
 			</a>
-			<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-			</button> -->
+			<?php if ( is_front_page() ) {
+    		echo '';
+			} else {
+    		echo '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars fa-2x"></i>
+			</button>';
+			};?>
+			
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<?php
 				wp_nav_menu( array(
@@ -21,10 +26,19 @@
 					'container'         => '',
 					'container_class'   => '',
 					'container_id'      => '',
-					'menu_class'        => 'nav navbar-nav',
+					'menu_class'        => 'navbar-nav ml-auto',
 					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 					'walker'            => new WP_Bootstrap_Navwalker(),
 				) );
 				?>
 			</div>
 		</nav>
+		<aside>
+		<div class="subHeader">
+			<div class="container">
+				<p class="text-center pt-4 h6 text-white">
+					<strong>Call Us Today! <a href="tel:302.659.6953"><u>302-659-6593</u></a> Or Call Us Toll Free At <a href="tel:877.278.2776"><u>1-877-AQUAPRO</u></a></strong> 
+				</p>
+			</div>
+		</div>
+	</aside>

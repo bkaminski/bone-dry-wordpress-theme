@@ -10,19 +10,16 @@ License URI: https://github.com/bkaminski/bone-dry-wordpress-theme/blob/master/L
 Tags: mobile first, secure, user friendly, Bootstrap, structured data, service based website, custom build, custom functions
 Text Domain: bone-dry
 */
-html {
-position: relative;
-min-height: 100%;
-}
 body {
-margin-bottom: 0px;
 background: #336699;
+overflow-y: hidden;
 }
 .subHeader {
-min-height: 77px;
+min-height: 81px;
 width: auto;
 background: #336699;
-margin-top: 77px;
+padding-top: 5px;
+margin-top: 81px;
 padding-bottom: 15px;
 border-bottom: 4px solid #9ee493;
 }
@@ -40,7 +37,7 @@ color: #fff;
 transition: 0.4s ease-in-out;
 }
 span.apiName:hover {
-color: #ffcc00;
+color: #9ee493;
 transition: 0.4s ease-in-out;
 text-decoration: underline;
 }
@@ -54,13 +51,66 @@ background-repeat: no-repeat;
 background-size: cover;
 padding-bottom: .2rem;
 border-bottom: 4px solid #9ee493;
-min-height: 100px;
+min-height: 130px;
 }
 .xtraSmall {
 font-size: 60%;
 }
 .homeIcons {
 color: #fff;
+}
+.btn-api {
+color: #014493 !important;
+background-color: #b0b2d9;
+border-color: #014493;
+transition: 0.4s ease-in-out;
+}
+.btn-api:hover {
+color: #fff !important;
+background-color: #8e90b0;
+border-color: #014493;
+transition: 0.4s ease-in-out;
+}
+a[href^="tel:"] {
+color: #ffffff;
+text-decoration: none;
+transition: 0.4s ease-in-out;
+}
+a[href^="tel:"]:hover {
+color: #ffcc00;
+transition: 0.4s ease-in-out;
+}
+.mobileHome {
+padding-top: 10%;
+}
+.homeDesk {
+margin-top: -30px;
+}
+/* =============== Bootstrap Overrides =============== */
+.nav-link {
+color: #fff;
+transition: 0.4s ease-in-out;
+}
+.nav-link:hover {
+color: #9ee493;
+}
+.navbar-toggler {
+padding: .25rem .75rem;
+font-size: 1.25rem;
+line-height: 1;
+background-color: #b0b2d9;
+border: 2px solid #fff;
+border-radius: .25rem;
+transition: 0.4s ease-in-out;
+}
+.navbar-toggler:hover {
+padding: .25rem .75rem;
+font-size: 1.25rem;
+line-height: 1;
+background-color: #8e90b0;
+border: 2px solid #014493;
+border-radius: .25rem;
+transition: 0.4s ease-in-out;
 }
 /* =============== FontAwesome styling =============== */
 .fa-facebook {
@@ -77,46 +127,47 @@ transition: 0.4s ease-in-out;
 color: #ffcc00;
 transition: 0.4s ease-in-out;
 }
-/* =============== /FontAwesome styling =============== */
-a[href^="tel:"] {
-color: #ffffff;
-text-decoration: none;
+.fa-bars {
+color: #014493;
 transition: 0.4s ease-in-out;
 }
-a[href^="tel:"]:hover {
-color: #ffcc00;
+.fa-bars:hover {
+color: #fff;
 transition: 0.4s ease-in-out;
 }
-.fullscreen-bg {
-position: fixed;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-overflow: hidden;
-z-index: -100;
+/* =============== Media Queries =============== */
+@media (min-width: 576px) { 
 }
-.fullscreen-bg__video {
-position: absolute;
-top: 0;
-left: 0;
+@media (min-width: 768px) {
+.aboutExcerpt {
+min-height: 500px;
+}
+.footer {
+position: relative;
 width: 100%;
-height: 100%;
+height: 100px;
+line-height: 0px;
+padding-top: 35px;
 }
-@media (min-aspect-ratio: 16/9) {
-.fullscreen-bg__video {
-height: 300%;
-top: -100%;
-}}
-@media (max-aspect-ratio: 16/9) {
-.fullscreen-bg__video {
-width: 300%;
-left: -100%;
-}}
-@media (max-width: 767px) {
-.fullscreen-bg {
-background: url('lib/img/api-background-image.jpg') center center / cover no-repeat;
+body {
+overflow: auto;
 }
-.fullscreen-bg__video {
-display: none;
+.mobileHeading {
+padding-top: 7%;
+padding-bottom: 4%;
+}}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+/* =============== Orientation Lock =============== */
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
+html {
+transform: rotate(-90deg);
+transform-origin: left top;
+width: 100vh;
+overflow-x: hidden;
+position: absolute;
+top: 100%;
+left: 0;
 }}
