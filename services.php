@@ -1,4 +1,21 @@
-<div class="card-deck d-none d-md-inline-flex mb-5">
+<?php
+/**
+ * Template Name: Services Page Template
+ *
+ * @package WordPress
+ * @subpackage Bone Dry WordPress Theme
+ * 
+ */
+get_header(); ?>
+	<div class="container">
+		<div class="intPage">
+			<h1><?php echo the_title(); ?></h1>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<?php the_content(); ?>
+				<?php endwhile; else : ?>
+					<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<?php endif; ?>
+			<div class="card-deck mb-2">
                     <div class="card border-dark shadow">
                         <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/lib/img/mold-remediation-api.jpg" alt="Mold Remediation">
                             <div class="card-body">
@@ -30,7 +47,7 @@
                             </div>
                     </div>
                 </div>
-                <div class="card-deck d-none d-md-inline-flex mb-5">
+                <div class="card-deck mb-5">
                     <div class="card border-dark shadow">
                         <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/lib/img/water-damage-api.jpg" alt="Water Damage">
                             <div class="card-body">
@@ -62,3 +79,6 @@
                             </div>
                     </div>
                 </div>
+		</div>
+	</div>
+<?php get_footer(); ?>
