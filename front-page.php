@@ -3,7 +3,7 @@
 		<div class="container-fluid">
 			<div class="col">
 				<img class="d-none d-md-block mx-auto img-fluid mt-4" src="<?php echo get_template_directory_uri(); ?>/lib/img/api-logo-trans.png" alt="Aqua Pro Incorporated" style="margin-top:-12px;" />
-				<h1 class="text-center mobileHeading text-white">Aqua Pro, Inc. (API) is a full service cleaning company specializing in various cleaning services for residential, commercial and industrial clients.</h1>
+				<h1 class="text-center mobileHeading text-white text-shadow">Aqua Pro, Inc. (API) is a full service cleaning company specializing in various cleaning services for residential, commercial and industrial clients.</h1>
 			</div>
 		</div>
 	</section>

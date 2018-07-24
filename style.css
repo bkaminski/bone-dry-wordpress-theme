@@ -42,6 +42,9 @@ height: 100px;
 line-height: 0px;
 padding-top: 35px;
 }
+.text-shadow {
+text-shadow: 2px 2px 4px #333;
+}
 span.apiName {
 color: #fff;
 transition: 0.4s ease-in-out;
@@ -148,20 +151,42 @@ border: 2px solid #014493;
 border-radius: .25rem;
 transition: 0.4s ease-in-out;
 }
-/* =============== FontAwesome styling =============== */
-.fa-facebook {
+.dropdown-menu {
+font-size: 0.8rem;
+}
+.pplink {
+color: #fff;
 transition: 0.4s ease-in-out;
 }
-.fa-facebook:hover {
-color: #ffcc00;
+.pplink:hover {
+transition: 0.4s ease-in-out;
+color: #9ee493;
+}
+
+/* =============== FontAwesome styling =============== */
+.fa-facebook-square {
+transition: 0.4s ease-in-out;
+color: #fff;
+}
+.fa-facebook-square:hover {
+color: #9ee493;
 transition: 0.4s ease-in-out;
 }
 .fa-twitter-square {
 transition: 0.4s ease-in-out;
+color: #fff;
 }
 .fa-twitter-square:hover {
-color: #ffcc00;
+color: #9ee493;
 transition: 0.4s ease-in-out;
+}
+.fa-linkedin {
+transition: 0.4s ease-in-out;
+color: #fff;
+}
+.fa-linkedin:hover {
+color: #9ee493;
+transition: 0.4s ease-in-out;	
 }
 .fa-bars {
 color: #014493;
@@ -186,6 +211,9 @@ min-height: 500px;
 .apiServices {
 margin-top: 40px;
 position: absolute;
+}
+.dropdown-menu {
+font-size: 1rem;
 }
 .footer {
 position: relative;
