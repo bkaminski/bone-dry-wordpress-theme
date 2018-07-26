@@ -67,7 +67,7 @@ background-repeat: no-repeat;
 background-size: cover;
 padding-bottom: .2rem;
 border-bottom: 4px solid #9ee493;
-min-height: 130px;
+min-height: 100px;
 }
 .xtraSmall {
 font-size: 60%;
@@ -125,6 +125,36 @@ padding: 15px;
 display: relative;
 background: #fff;
 }
+.locationWrapper {
+min-height: 150px;
+background: #ccc;
+width: auto;
+border-top: 4px solid #9ee493;
+}
+h1#excerptText {
+-webkit-animation: fadein 5s;
+-moz-animation: fadein 5s;
+-ms-animation: fadein 5s;
+-o-animation: fadein 5s; 
+animation: fadein 5s;
+}
+@-webkit-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
+@-moz-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
+@-ms-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
+@-o-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
+img#apiLogo {
+-webkit-animation: fadein 3s;
+-moz-animation: fadein 3s;
+-ms-animation: fadein 3s;
+-o-animation: fadein 3s; 
+animation: fadein 3s;
+}
+@-webkit-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
+@-moz-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
+@-ms-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
+@-o-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
 /* =============== Bootstrap Overrides =============== */
 .nav-link {
 color: #fff;
