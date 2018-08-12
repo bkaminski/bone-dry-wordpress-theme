@@ -55,7 +55,7 @@ get_header(); ?>
                                 <p class="card-text">Water Damage can strike at any time and usually when you least expect it.  Whether your water damage situation is from flood waters courtesy of Mother Nature, or broken water lines and faulty plumbing...</p>
                             </div>
                             <div class="card-footer">
-                                <a href="mold-water-damage/" class="btn btn-api">Read More <i class="fas fa-angle-double-right ml-2"></i></a>
+                                <a href="water-damage/" class="btn btn-api">Read More <i class="fas fa-angle-double-right ml-2"></i></a>
                             </div>
                     </div>
                     <div class="card border-dark shadow">

@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 	<div class="container">
 		<div class="intPage">
-			<h1><?php echo the_title(); ?></h1>
+			<h1 class="mb-4"><?php echo the_title(); ?></h1>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<figure>
-				<?php the_post_thumbnail( 'full', array( 'class' => 'mx-auto d-block' ) ); ?>
+				<?php the_post_thumbnail( 'full', array( 'class' => 'mx-auto d-block img-thumbnail' ) ); ?>
 						
 				</figure>
 

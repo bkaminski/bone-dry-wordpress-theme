@@ -15,12 +15,12 @@ background: #336699;
 }
 body.page {
 background: #336699;
-overflow-y: visible;
+overflow-y: visible !important;
 }
 .subHeader {
 min-height: 81px;
 width: auto;
-background: #336699;
+background-color: rgba(23, 169, 232, 1);
 padding-top: 5px;
 margin-top: 81px;
 padding-bottom: 15px;
@@ -35,7 +35,8 @@ height: 60px;
 line-height: 54px;
 background: #2f4858;
 }
-.page .footer {
+.page .footer,
+.tag .footer {
 position: relative;
 width: 100%;
 height: 100px;
@@ -49,7 +50,8 @@ span.apiName {
 color: #fff;
 transition: 0.4s ease-in-out;
 }
-.page span.apiName {
+.page span.apiName,
+.tag span.apiName {
 font-size: 12px;
 }
 span.apiName:hover {
@@ -88,12 +90,12 @@ border-color: #014493;
 transition: 0.4s ease-in-out;
 }
 a[href^="tel:"] {
-color: #ffffff;
+color: #333;
 text-decoration: none;
 transition: 0.4s ease-in-out;
 }
 a[href^="tel:"]:hover {
-color: #ffcc00;
+color: #9ee493;
 transition: 0.4s ease-in-out;
 }
 .mobileHome {
@@ -119,7 +121,7 @@ margin-top: -25px;
 top: 0;
 }
 .intPage {
-min-height: 1000px;
+min-height: 850px;
 width: auto;
 padding: 15px;
 display: relative;
@@ -140,7 +142,6 @@ animation: fadein 5s;
 }
 @-webkit-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
 @-moz-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
-@-ms-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
 @-o-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
 @keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
 img#apiLogo {
@@ -152,7 +153,6 @@ animation: fadein 3s;
 }
 @-webkit-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
 @-moz-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
-@-ms-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
 @-o-keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
 @keyframes fadein { from { opacity: 0; } to { opacity: 1; }}
 /* =============== Bootstrap Overrides =============== */
@@ -192,7 +192,6 @@ transition: 0.4s ease-in-out;
 transition: 0.4s ease-in-out;
 color: #9ee493;
 }
-
 /* =============== FontAwesome styling =============== */
 .fa-facebook-square {
 transition: 0.4s ease-in-out;
@@ -238,6 +237,12 @@ font-size: inherit;
 .aboutExcerpt {
 min-height: 500px;
 }
+.callToday {
+font-size: 1.5rem;
+}
+.page p {
+font-size: 1.5rem;
+}
 .apiServices {
 margin-top: 40px;
 position: absolute;
@@ -270,7 +275,7 @@ margin-top: 40px;
 }}
 /* =============== Orientation Lock =============== */
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-html {
+html > .home {
 transform: rotate(-90deg);
 transform-origin: left top;
 width: 100vh;
