@@ -42,11 +42,6 @@ show_admin_bar(false);
 //Allow post and page "featured image"
 add_theme_support('post-thumbnails');
 
-//Disable posts -- for now
-function remove_posts_menu() {
-    remove_menu_page('edit.php');
-}
-add_action('admin_menu', 'remove_posts_menu');
 
 // add tag support to pages
 function tags_support_all()
@@ -253,24 +248,3 @@ function bone_dry_pagination($pages = '', $range = 1)
     }
 }
 //end pagination
-
-//Theme Customizer
-function api_projects_img_slide_1( $wp_customize ) {
-    $wp_customize->add_section(
-    'projects_slide_img_one',
-    array(
-        'title' => 'Project Image 1',
-        'description' => 'Update or Edit First Image in Projects Slider',
-        'priority' => 10,
-    ));
-    $wp_customize->add_setting( 'api_slide_img_upload_one' );
-    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'api_slide_img_upload_one', array(
-        'label'    => __( 'Upload first image:', 'bone-dry-wordpress-theme' ),
-        'section' => 'projects_slide_img_one',
-        'settings' => 'api_slide_img_upload_one',
-        'description' => 'ueooeauaoeuoeaueoa'
-    )));
-}
-add_action( 'customize_register', 'api_projects_img_slide_1' );
-
-

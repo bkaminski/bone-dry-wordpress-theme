@@ -14,6 +14,7 @@ get_header(); ?>
 					<p>Here are some "on the job" pictures we have collected over the years that help visualize the type of work API performs. We love getting dirty to help you get clean!</p>
 					<?php include get_template_directory() . '/lib/inc/projects-carousel.php'; ?>
 				</div>
+				<?php the_tags('<span class="badge badge-primary mr-2 mt-5">Related:</span> ' , ', ', ''); ?>
 		</div>
 	</div>
 <?php get_footer(); ?>

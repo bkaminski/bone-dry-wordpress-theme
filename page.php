@@ -7,9 +7,12 @@
 				<?php the_post_thumbnail( 'full', array( 'class' => 'mx-auto d-block img-thumbnail' ) ); ?>
 						
 				</figure>
+				<main>
 
 				<?php the_content(); ?>
+				
 				<br />
+				</main>
 
 				<?php the_tags('<span class="badge badge-primary mr-2">Related:</span> ' , ', ', ''); ?>
 
