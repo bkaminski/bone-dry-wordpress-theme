@@ -18,7 +18,7 @@
 				</h1>
 					<?php the_excerpt(); ?>
 				
-				<hr />
+				<hr class="shadow news-pg-hr" />
 			</main>
 		</div>
 		<?php endwhile; else : ?>

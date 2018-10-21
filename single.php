@@ -7,7 +7,7 @@
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<figure>
-					<?php the_post_thumbnail( 'medium', array( 'class' => 'img-thumbnail aligncenter mt-4' ) ); ?>
+					<?php the_post_thumbnail( 'medium', array( 'class' => 'img-thumbnail aligncenter mt-4 shadow' ) ); ?>
 						
 				</figure>
 				<main>
@@ -37,7 +37,7 @@
 									</figure>
 									<div class="card-body">
 										<h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-										<?php the_excerpt( array('class' => 'card-text') ); ?>
+										<?php the_excerpt(); ?>
 									</div>
 								</div>
 		      				</div>

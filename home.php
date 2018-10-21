@@ -18,7 +18,7 @@
 					<div class="mb-5"><?php the_excerpt(); ?></div>
 				</div>
 			</div>
-			<hr class="shadow" />
+			<hr class="shadow news-pg-hr" />
 			<?php endwhile; else : ?>
 				<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			<?php endif; ?>

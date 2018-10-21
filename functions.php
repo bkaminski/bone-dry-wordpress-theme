@@ -103,7 +103,7 @@ add_filter('post_thumbnail_html', 'bootstrap_fluid_images', 10);
 function excerpt_read_more_link($output)
 {
     global $post;
-    return $output . '<a class="btn btn-lg btn-api text-uppercase" href="' . get_permalink() . '">Read More <i class="fas fa-angle-double-right fa-fw fa-lg"></i></a>';
+    return $output . '<a class="btn btn-lg btn-api-social text-uppercase" href="' . get_permalink() . '">Read More <i class="fas fa-angle-double-right fa-fw fa-lg"></i></a>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 //end blog page read more button
