@@ -12,31 +12,31 @@
   	</ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="https://apicancleanit.com/wp-content/uploads/2018/08/api-mold-remediation.png" alt="Mold Remediation">
+            <img class="d-block w-100" src="<?php echo esc_url( get_theme_mod( 'aquaPro_project_img_upload_1' ) ); ?>" alt="<?php echo( get_theme_mod( 'aquaPro_Image_Alt_1' ) ); ?>">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://apicancleanit.com/wp-content/uploads/2018/08/api-environmental-cleaning-services.png" alt="Environmental Services">
+            <img class="d-block w-100" src="<?php echo esc_url( get_theme_mod( 'aquaPro_project_img_upload_2' ) ); ?>" alt="<?php echo( get_theme_mod( 'aquaPro_Image_Alt_2' ) ); ?>">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://apicancleanit.com/wp-content/uploads/2018/08/api-pro-steam-cleaning-services.png" alt="Pressure Washing and Steam Cleaning">
+            <img class="d-block w-100" src="<?php echo esc_url( get_theme_mod( 'aquaPro_project_img_upload_3' ) ); ?>" alt="<?php echo( get_theme_mod( 'aquaPro_Image_Alt_3' ) ); ?>">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://apicancleanit.com/wp-content/uploads/2018/08/kitchen-exhaust-dirty-2.png" alt="Dirty Kitchen Exhaust Hood Cleaning">
+            <img class="d-block w-100" src="<?php echo esc_url( get_theme_mod( 'aquaPro_project_img_upload_4' ) ); ?>" alt="<?php echo( get_theme_mod( 'aquaPro_Image_Alt_4' ) ); ?>">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://apicancleanit.com/wp-content/uploads/2018/08/api-cleaned-kitchen-hood.png" alt="Cleaned Kitchen Exhaust Hood">
+            <img class="d-block w-100" src="<?php echo esc_url( get_theme_mod( 'aquaPro_project_img_upload_5' ) ); ?>" alt="<?php echo( get_theme_mod( 'aquaPro_Image_Alt_5' ) ); ?>">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://apicancleanit.com/wp-content/uploads/2018/08/api-access-panel-installation.png" alt="API Access Panel Installation">
+            <img class="d-block w-100" src="<?php echo esc_url( get_theme_mod( 'aquaPro_project_img_upload_6' ) ); ?>" alt="<?php echo( get_theme_mod( 'aquaPro_Image_Alt_6' ) ); ?>">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://apicancleanit.com/wp-content/uploads/2018/08/api-aqua-pro-industrial-cleaning.png" alt="API Industrial Kitchen Cleaning">
+            <img class="d-block w-100" src="<?php echo esc_url( get_theme_mod( 'aquaPro_project_img_upload_7' ) ); ?>" alt="<?php echo( get_theme_mod( 'aquaPro_Image_Alt_7' ) ); ?>">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://apicancleanit.com/wp-content/uploads/2018/08/api-mold-remediation-in-progress.png" alt="API Mold Remediation in Progress">
+            <img class="d-block w-100" src="<?php echo esc_url( get_theme_mod( 'aquaPro_project_img_upload_8' ) ); ?>" alt="<?php echo( get_theme_mod( 'aquaPro_Image_Alt_8' ) ); ?>">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://apicancleanit.com/wp-content/uploads/2018/08/api-can-clean-it.png" alt="API Can Clean It">
+            <img class="d-block w-100" src="<?php echo esc_url( get_theme_mod( 'aquaPro_project_img_upload_9' ) ); ?>" alt="<?php echo( get_theme_mod( 'aquaPro_Image_Alt_9' ) ); ?>">
         </div>
         <a class="carousel-control-prev" href="#apiCarousel" role="button" data-slide="prev">
     		<span class="carousel-control-prev-icon" aria-hidden="true"></span>

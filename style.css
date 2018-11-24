@@ -37,6 +37,7 @@ background: #2f4858;
 }
 .page-template-projects .footer,
 .page-id-7 .footer,
+.page-id-9 .footer,
 .page-id-13 .footer,
 .page-id-15 .footer,
 .parent-pageid-9 .footer,
@@ -222,6 +223,7 @@ color: #9ee493;
 .nav-link {
 color: #fff;
 transition: 0.4s ease-in-out;
+font-size: 14px;
 }
 .nav-link:hover {
 color: #9ee493;
@@ -303,6 +305,9 @@ font-size: inherit;
 .aboutExcerpt {
 min-height: 500px;
 }
+.nav-link {
+font-size: 1.6vw;
+}
 .home p.callToday {
 font-size: 1.5rem;
 }
@@ -343,6 +348,9 @@ font-size: 32px;
 @media (min-width: 992px) {
 .apiServices {
 margin-top: 20px;
+}
+.nav-link {
+font-size: 1.3vw;
 }
 .boxImg {
 height: 155px;

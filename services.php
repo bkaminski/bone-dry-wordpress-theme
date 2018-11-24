@@ -15,7 +15,8 @@ get_header(); ?>
 				<?php endwhile; else : ?>
 					<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 				<?php endif; ?>
-			<div class="card-deck mb-2">
+            <div class="row">
+			     <div class="col-lg card-deck mb-5">
                     <div class="card border-dark shadow">
                         <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/lib/img/mold-remediation-api.jpg" alt="Mold Remediation">
                             <div class="card-body">
@@ -47,7 +48,9 @@ get_header(); ?>
                             </div>
                     </div>
                 </div>
-                <div class="card-deck mb-5">
+            </div>
+            <div class="row">
+                <div class="col-lg card-deck mb-5">
                     <div class="card border-dark shadow">
                         <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/lib/img/water-damage-api.jpg" alt="Water Damage">
                             <div class="card-body">
@@ -79,6 +82,7 @@ get_header(); ?>
                             </div>
                     </div>
                 </div>
+            </div>
 		</div>
 	</div>
 <?php get_footer(); ?>
