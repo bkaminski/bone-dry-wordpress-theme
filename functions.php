@@ -18,6 +18,12 @@ function enqueue_bone_dry_styles()
 }
 add_action('wp_enqueue_scripts', 'enqueue_bone_dry_styles');
 
+// Update CSS within in Admin
+function admin_style() {
+  wp_enqueue_style('admin-styles', get_template_directory_uri().'/lib/css/customizer.css');
+}
+add_action('admin_enqueue_scripts', 'admin_style');
+
 function arphabet_widgets_init() {
 
     register_sidebar( array(

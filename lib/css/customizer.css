@@ -1,0 +1,14 @@
+/* Theme Customizer Customizations by Ben Kaminski */
+#customize-control-aquaPro_project_img_upload_1 > .customize-control-title,
+#customize-control-aquaPro_project_img_upload_2 > .customize-control-title,
+#customize-control-aquaPro_project_img_upload_3 > .customize-control-title,
+#customize-control-aquaPro_project_img_upload_4 > .customize-control-title,
+#customize-control-aquaPro_project_img_upload_5 > .customize-control-title,
+#customize-control-aquaPro_project_img_upload_6 > .customize-control-title,
+#customize-control-aquaPro_project_img_upload_7 > .customize-control-title,
+#customize-control-aquaPro_project_img_upload_8 > .customize-control-title,
+#customize-control-aquaPro_project_img_upload_9 > .customize-control-title {
+	background: #28a745;
+	color: #fff;
+	padding :5px;
+}
